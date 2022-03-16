@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace DataCreator.Helpers
+namespace DataCreator.Library.Helpers
 {
     public static class StringHelper
     {

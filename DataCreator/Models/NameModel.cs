@@ -1,6 +1,6 @@
 ﻿using FileHelpers;
 
-namespace DataCreator.Models
+namespace DataCreator.Library.Models
 {
     [DelimitedRecord(",")]
     public class NameModel

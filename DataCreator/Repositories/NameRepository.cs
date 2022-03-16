@@ -1,13 +1,7 @@
-﻿using DataCreator.Helpers;
-using DataCreator.Models;
+﻿using DataCreator.Library.Models;
 using FileHelpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Console
+namespace DataCreator.Library.Repositories
 {
     public class NameRepository
     {
@@ -25,12 +19,12 @@ namespace Console
             if (!_names.Any())
             {
                 var fileHelperEngine = new FileHelperEngine<NameModel>();
-                _names = fileHelperEngine.ReadFile(@"names.csv").ToList();
+                _names = fileHelperEngine.ReadFile(@"Data\names.csv").ToList();
             }
 
             int index = _random.Next(0, _names.Count() - 1);
 
-            return StringHelper.FormatName(_names[index].Name);
+            return _names[index].Name;
         }
 
         public string GetLastName()
@@ -38,12 +32,12 @@ namespace Console
             if (!_names.Any())
             {
                 var fileHelperEngine = new FileHelperEngine<NameModel>();
-                _names = fileHelperEngine.ReadFile(@"surnames.csv").ToList();
+                _names = fileHelperEngine.ReadFile(@"Data\surnames.csv").ToList();
             }
 
             int index = _random.Next(0, _names.Count() - 1);
 
-            return StringHelper.FormatName(_names[index].Name);
+            return _names[index].Name;
         }
     }
 }

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console", "Console\Console.csproj", "{2390F12E-9F84-4331-8002-A98C9B6679EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataCreator", "DataCreator\DataCreator.csproj", "{4ED2DBDE-3A51-4623-AA5E-E3256B87BE64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataCreator.Library", "DataCreator\DataCreator.Library.csproj", "{4ED2DBDE-3A51-4623-AA5E-E3256B87BE64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

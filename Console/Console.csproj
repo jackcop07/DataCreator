@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DataCreator\DataCreator.csproj" />
+    <ProjectReference Include="..\DataCreator\DataCreator.Library.csproj" />
   </ItemGroup>
 
 </Project>

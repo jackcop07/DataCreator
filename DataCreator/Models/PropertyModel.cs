@@ -1,11 +1,6 @@
-﻿using DataCreator.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataCreator.Library.Enums;
 
-namespace DataCreator.Models
+namespace DataCreator.Library.Models
 {
     public class PropertyModel
     {

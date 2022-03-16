@@ -1,13 +1,8 @@
-﻿using DataCreator.Enums;
-using DataCreator.Models;
-using System;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Dynamic;
+using DataCreator.Library.Enums;
+using DataCreator.Library.Models;
 
-namespace Console
+namespace DataCreator.Library.Services
 {
     public class DataService
     {
@@ -53,14 +48,14 @@ namespace Console
 
         private string GetFirstName()
         {
-            var stringService = new NameRepository();
+            var stringService = new StringService();
 
             return stringService.GetFirstName();
         }
 
         private string GetLastName()
         {
-            var stringService = new NameRepository();
+            var stringService = new StringService();
 
             return stringService.GetLastName();
         }
